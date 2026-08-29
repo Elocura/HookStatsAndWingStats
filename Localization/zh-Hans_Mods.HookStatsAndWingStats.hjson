@@ -1,0 +1,160 @@
+Unknown: 未知
+
+StatSubtitles: {
+	HookReach: 射程
+	HookShootSpeed: 发射速度
+	HookNumHooks: 可同时发射的抓钩数
+	HookLatchingType: 抓钩生效方式
+	WingMaxFlightTime: 飞行时间
+	WingHorizontalSpeed: 水平速度
+	WingVerticalSpeedMultiplier: 垂直速度倍数
+}
+
+LatchingTypes: {
+	Single: 单钩
+	Simultaneous: 多钩同时钩住
+	Individual: 多钩中仅一个钩住
+	Special: 特殊
+}
+
+Configs: {
+	HookConfig: {
+		DisplayName: 抓钩设置
+		Headers.Stats: 属性
+
+		ShowStats: {
+			Label: 显示抓钩属性
+			Tooltip: ""
+		}
+
+		CompareStats: {
+			Label: 显示属性对比
+			Tooltip: 对比鼠标指向的抓钩和你当前装备的抓钩
+		}
+
+		ShowReach: {
+			Label: 显示射程
+			Tooltip: ""
+		}
+
+		ShowLatchingType: {
+			Label: 显示抓钩生效方式
+			Tooltip:
+				'''
+				单钩：只能发射一个抓钩，也只能有一个抓钩钩住地形
+				多钩同时钩住：可以发射多个抓钩，也可以让多个抓钩同时钩住地形
+				多钩中仅一个钩住：可以发射多个抓钩，但一次只有一个能钩住地形
+				特殊：不属于以上三种的抓钩
+				'''
+		}
+
+		ReachInTiles: {
+			Label: 以物块为单位显示射程
+			Tooltip: 启用后以物块显示射程；关闭后以像素显示（16 像素 = 1 物块）
+		}
+
+		ShowNumHooks: {
+			Tooltip: ""
+			Label: 显示可同时发射的抓钩数
+		}
+
+		ShowShootSpeed: {
+			Label: 显示发射速度
+			Tooltip: ""
+		}
+
+		ShootSpeedInTilesPerSecond: {
+			Label: 以每秒移动的物块数显示发射速度
+			Tooltip: ""
+		}
+	}
+
+	WingConfig: {
+		DisplayName: 翅膀设置
+		Headers.WingStats: 翅膀属性
+
+		ShowStats: {
+			Label: 显示翅膀属性
+			Tooltip: ""
+		}
+
+		CompareStats: {
+			Label: 与已装备的翅膀进行对比
+			Tooltip: 对比鼠标指向的翅膀和你当前装备的翅膀
+		}
+
+		ShowMaxWingTime: {
+			Label: 显示最长飞行时间
+			Tooltip: ""
+		}
+
+		FlightTimeInSeconds: {
+			Label: 以秒为单位显示飞行时间
+			Tooltip: 关闭后以帧数显示（游戏通常每秒运行 60 帧）
+		}
+
+		ShowHorizontalSpeed: {
+			Label: 显示翅膀水平速度
+			Tooltip: ""
+		}
+
+		HorizontalSpeedInMph: {
+			Label: 以英里/小时显示水平速度
+			Tooltip:
+				'''
+				关闭后，速度将显示为游戏内部使用的数值。
+				换算成英里/小时时会四舍五入，因此数值可能有少量误差。
+				'''
+		}
+
+		ShowVerticalMult: {
+			Label: 显示垂直速度倍数
+			Tooltip: 数值越大，翅膀向上飞行的速度越快
+		}
+	}
+
+	MiscConfig: {
+		DisplayName: 其他设置
+		Headers.Colors: 颜色
+
+		ComparisonBetterColor: {
+			Label: 数值更好时的颜色
+			Tooltip: 对比两件物品时，用这种颜色标出更好的数值
+		}
+
+		ComparisonWorseColor: {
+			Label: 数值更差时的颜色
+			Tooltip: 对比两件物品时，用这种颜色标出更差的数值
+		}
+
+		ComparisonEqualColor: {
+			Label: 数值相同时的颜色
+			Tooltip: 对比两件物品时，用这种颜色标出相同的数值
+		}
+
+		StatSubtitleColor: {
+			Label: 属性名称颜色
+			Tooltip: “抓钩数量”“水平速度”等属性名称所使用的颜色
+		}
+
+		StatValueColor: {
+			Label: 属性值颜色
+			Tooltip: “24 英里/小时”“3 秒”等具体数值所使用的颜色
+		}
+
+		ShowUnknownStats: {
+			Label: 显示未知属性
+			Tooltip:
+				'''
+				有些属性无法轻易判断。
+				启用后，这些属性会显示为“未知”；关闭后则不会显示。
+				此选项会影响可同时发射的抓钩数、抓钩生效方式和垂直速度倍数。
+				'''
+		}
+
+		DecimalPrecision: {
+			Label: 显示的小数位数
+			Tooltip: 设置属性数值保留几位小数
+		}
+	}
+}
