@@ -13,6 +13,7 @@
 [h2]Credits[/h2]
 
 - [url=https://github.com/syystem32]syystem32[/url] for Russian translation
+- [url=https://github.com/Er1c-WYH]Er1c-WYH[/url] for Chinese translation
 
 [hr][/hr]
 
